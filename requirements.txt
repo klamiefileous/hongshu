@@ -1,0 +1,8 @@
+# Web API
+fastapi>=0.110
+uvicorn[standard]>=0.29
+
+# Spider
+playwright>=1.40
+schedule>=1.2
+requests>=2.31
