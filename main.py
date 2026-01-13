@@ -4,6 +4,7 @@ from pydantic import BaseModel
 from typing import Optional
 import sqlite3
 from datetime import datetime
+from db import init_database
 
 app = FastAPI()
 
@@ -95,3 +96,4 @@ def get_posts(keyword: Optional[str] = None):
 @app.get("/")
 def health_check():
     return {"status": "ok"}
+
